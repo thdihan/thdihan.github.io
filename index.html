@@ -1,21 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <title>Vite + React + TS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'], // Add 'Roboto' as a custom font
+                    },
+                }
+            }
+        }
+    </script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+<body class="bg-[#212428]">
+    <header class="max-w-[1200px] mx-auto">
+        <section class="flex justify-center py-16 items-center flex-col">
+            <div class="background-gradient rounded-full flex justify-center items-center size-[21rem]  animate-text">
+                <!-- <div class="flex justify-center rounded-full  bg-[#1C1F24] w-[92%] border-custom">
+                    <img src="asset/profile.png" class="rounded-full" alt="">
+                </div> -->
+
+
+            </div>
+
+            <div class="py-8">
+                <h1 class="text-5xl text-white font-bold" style="font-family: Montserrat">Tanvir Hossain Dihan</h1>
+
+                <div class="py-8 space-x-2 flex justify-center">
+                    <p class="font-thin text-3xl text-white" style="font-family: Poppins">I am a</p>
+                    <div>
+                        <p class="text-animation text-[#3b82f6] font-light text-3xl">Full Stack Developer </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
+
 
 </html>

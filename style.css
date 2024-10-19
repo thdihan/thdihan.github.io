@@ -1,0 +1,57 @@
+.background-gradient {
+    background: linear-gradient(
+        145deg,
+        #ec4899,
+        #a855f7,
+        #3b82f6,
+        #0ea5e9,
+        #06b6d4,
+        #10b981
+    );
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-animation {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */ /* The typwriter cursor */
+    border-right: 1px solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* margin: 0 auto;  */
+    margin-right: 10px;
+    animation: typing 5s infinite, blink-caret 0.75s infinite;
+    animation-delay: 250ms;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
