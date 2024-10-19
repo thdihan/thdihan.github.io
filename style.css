@@ -55,3 +55,21 @@
         border-color: white;
     }
 }
+
+.button {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    font-family: poppins;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+    background: #1c1f24;
+    transform: translateY(-5px);
+}
+
+.skill-icon img {
+    width: 50px;
+    /* box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; */
+    transition: 0.5s ease-in-out;
+}
