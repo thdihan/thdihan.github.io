@@ -1,3 +1,6 @@
+body {
+    font-family: poppins;
+}
 .background-gradient {
     background: linear-gradient(
         145deg,
@@ -9,7 +12,7 @@
         #10b981
     );
     background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 3s ease infinite;
 }
 
 @keyframes gradient {
@@ -121,4 +124,33 @@ canvas {
 }
 .count-particles {
     border-radius: 0 0 3px 3px;
+}
+
+.email svg {
+    visibility: hidden;
+}
+.email:hover svg {
+    visibility: visible;
+}
+
+.portfolio-card {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    transition: 0.5s ease-in-out; /* [1.1] Set it as per your need */
+}
+
+.portfolio-card:hover {
+    background: #1c1f24;
+}
+
+.portfolio-card img {
+    transition: transform 0.3s ease-in-out;
+    height: 250px;
+}
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-card a:hover {
+    color: #3b82f6;
 }
